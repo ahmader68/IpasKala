@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_activity_height"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtTitleStockList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="موبایل و لوازم جانبی"
+            android:textSize="@dimen/title_activity_font_size"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCallMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp"
+        android:elevation="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        card_view:cardElevation="10dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff5f5f5"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="10"
+        >
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtViewMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text="@string/fa_list_item"
+            android:textColor="@color/icon_menu_stock_list"
+            android:textSize="23sp"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            app:fontName="@string/font_awesome"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lSorting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@drawable/sh_background_with_shadow">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="مرتب سازی" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtFilterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="پربازدیدترین"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="&#xf160;"
+                android:textColor="@color/icon_menu_stock_list"
+                android:textSize="23sp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                app:fontName="@string/font_awesome"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lAdvanceSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="فیلتر نمایش" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="رنگ، نوع، قیمت و ..."
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="&#xf0b0;"
+                android:textColor="@color/icon_menu_stock_list"
+                android:textSize="23sp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                app:fontName="@string/font_awesome"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewstock"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+        <include
+            android:id="@+id/toolbarBottom"
+            layout="@layout/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+    </LinearLayout>
+</LinearLayout>

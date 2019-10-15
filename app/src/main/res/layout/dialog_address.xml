@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtEditId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="7dp"
+        android:text="استان" />
+
+    <Spinner
+        android:id="@+id/spArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="7dp"
+        android:text="شهر" />
+
+    <Spinner
+        android:id="@+id/spCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intechdev.IpasKala.component.EditTextAppWork
+            android:id="@+id/etPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="کدپستی"
+            android:inputType="number"
+            android:text="" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intechdev.IpasKala.component.EditTextAppWork
+            android:id="@+id/etTell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="تلفن ثابت"
+            android:inputType="number"
+            android:text="" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intechdev.IpasKala.component.EditTextAppWork
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="آدرس"
+            android:inputType="text"
+            android:text="" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.intechdev.IpasKala.component.ButtonAppWork
+        android:id="@+id/btnConfirmAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/ConfirmAddress"
+        android:theme="@style/RedButton" />
+
+    <com.intechdev.IpasKala.component.ButtonAppWork
+        android:id="@+id/btnConfirmEditAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/ConfirmAddress"
+        android:theme="@style/RedButton"
+        android:visibility="gone"/>
+</LinearLayout>

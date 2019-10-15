@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="155dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@color/cardview_light_background"
+    android:padding="5dp"
+    android:id="@+id/lItemMain">
+
+    <ImageView
+        android:id="@+id/imgStockSmallMain"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        app:srcCompat= "@drawable/capture1" />
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/txtStockNameMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+
+        android:layout_alignParentRight="true"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:gravity="center_vertical|center_horizontal|center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/txtPriceOfferMainTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="تومان"
+                android:textAlignment="center"
+                android:textColor="@color/Red" />
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/txtPriceOfferMain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text=""
+                android:textColor="@color/Red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/txtPriceTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="تومان"
+                android:textAlignment="center"
+                android:textColor="@color/Green" />
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/txtPriceMain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:text=""
+                android:textColor="@color/Green" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_activity_height"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="نظرات کاربران"
+            android:textSize="@dimen/title_activity_font_size"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff5f5f5"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnBestComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="مفیدترین نظرات"
+            android:drawableRight="@drawable/ic_action_sort_1"/>
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/textView40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="نظرات کاربران"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:clipToPadding="false">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:src="@drawable/fb_icon_play"
+                app:backgroundTint="@drawable/fb_play_bg" />
+        </FrameLayout>
+
+
+        <include
+            android:id="@+id/toolbarBottom"
+            layout="@layout/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+    </LinearLayout>
+</LinearLayout>

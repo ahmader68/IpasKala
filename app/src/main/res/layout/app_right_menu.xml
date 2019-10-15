@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="#FFfefefe"
+    android:gravity="left"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="ltr"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layoutDirection="ltr"
+            android:padding="5dp"
+            android:background="@color/White"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/app" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lArcive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layoutDirection="ltr"
+            android:foreground="?attr/selectableItemBackground"
+            android:weightSum="10" >
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/txtCarCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بلاگ"
+
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_home" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.03dp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/lRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/textViewAppWork2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ثبت نام"
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_bell" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/textViewAppWork3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ورود"
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_home" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/lMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/TextViewAppWork02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جزئیات کالا"
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_home" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/lDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/TextViewAppWork03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مشخصات کالا"
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_home" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:foreground="?attr/selectableItemBackground"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal" >
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/TextViewAppWork01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خروج"
+                android:textColor="#fefefe" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_action_exit" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

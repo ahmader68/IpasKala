@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal">
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&#xf127;"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/Green"
+        app:fontName="@string/font_awesome"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="عدم اتصال به اینترنت"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اتصال شما به اینترنت برقرار نیست.برای استفاده از نرم افزار به اینترنت متصل شوید"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.1"
+        android:background="@color/Green"
+        android:gravity="center_vertical|center|clip_horizontal"
+        android:layout_marginTop="20dp">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtGprs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="اینترنت موبایل"
+            android:textColor="@color/White"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.01"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"></LinearLayout>
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtWifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="اینترنت Wi-Fi"
+            android:textColor="@color/White"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

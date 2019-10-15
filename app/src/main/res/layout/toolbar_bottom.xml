@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/cardview_dark_background"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <ViewFlipper
+        android:id="@+id/vfBottomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llToolbarBottomProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:textSize="24sp"
+                    app:fontName="@string/font_awesome" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="پروفایل"
+                    android:textColor="@color/White"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llToolbarBottomSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    app:fontName="@string/font_awesome" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="جستجو"
+                    android:textColor="@color/White"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llToolbarBottomHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    app:fontName="@string/font_awesome" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="خانه"
+                    android:textColor="@color/White"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llToolbarBottomGroupStock"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    app:fontName="@string/font_awesome" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="دسته بندی"
+                    android:textColor="@color/White"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llToolbarBottomBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="&#xf08b;"
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    app:fontName="@string/font_awesome" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="بازگشت"
+                    android:textColor="@color/White"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgToolbarSearch"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.10"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_search"
+                android:layout_gravity="center|center_horizontal|center_vertical"/>
+
+            <com.intechdev.IpasKala.component.EditTextAppWork
+                android:id="@+id/etToolbarSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.80"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="جستجو"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColorHint="@color/White"
+                android:textColor="@color/White"
+                android:textSize="@dimen/font_size_1"
+                android:layout_gravity="center|center_horizontal|center_vertical"/>
+
+            <ImageView
+                android:id="@+id/imgToolbarClose"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.10"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_close"
+                android:layout_gravity="center|center_horizontal|center_vertical"/>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

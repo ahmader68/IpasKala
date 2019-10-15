@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6ca12d</color>
+    <color name="colorPrimaryDark">#638b33</color>
+    <color name="colorAccent">#616161</color>
+
+
+    <color name="indigo">#9932CC</color>
+    <color name="pink">#FF69B4</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="Red">#f14141</color>
+    <color name="Green">#49b366</color>
+    <color name="White">#fefefe</color>
+    <color name="dialog_back">#e7e7e7</color>
+
+    <color name="iconColorDisable">#d2d2d2</color>
+    <color name="icon_menu_stock_list">#d24e4e4e</color>
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="right"
+    android:background="#FFfefefe"
+    android:gravity="left"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/etSearch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="7dp"
+                    android:text="جستجو"
+                    android:textColor="@color/White"
+                    android:textSize="17sp"
+                    android:layout_marginRight="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/llClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical|center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:srcCompat="@drawable/ic_close"
+                        android:layout_marginRight="12dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:visibility="gone">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="موبایل و لوازم جانبی"
+            android:textSize="14sp"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.20"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <com.intechdev.IpasKala.component.EditTextAppWork
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/sh_advance_search_edit_text"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:ems="10"
+                    android:gravity="right|center_vertical"
+                    android:hint="جستجو"
+                    android:inputType="textPersonName"
+                    android:paddingRight="4dp"
+                    android:textSize="13dp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:scrollbars="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:background="#f0f0f0"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/sh_boarder"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5" />
+
+                        <com.intechdev.IpasKala.component.TextViewAppWork
+                            android:id="@+id/textView62"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="موجود"
+                            android:textSize="12dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llClear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/sh_boarder"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.intechdev.IpasKala.component.TextViewAppWork
+                            android:id="@+id/textView61"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:gravity="right|center_vertical"
+                            android:text="پاک کردن"
+                            android:textSize="12dp" />
+
+                        <com.intechdev.IpasKala.component.TextViewAppWork
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal|center_vertical"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.25"
+                            android:gravity="center_vertical|center_horizontal|center"
+                            android:text="&#xf014;"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="19sp"
+                            app:fontName="@string/font_awesome" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:orientation="vertical"
+                android:background="@color/cardview_dark_background">
+
+                <ListView
+                    android:id="@+id/lstSearchItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <com.intechdev.IpasKala.component.ButtonAppWork
+                android:id="@+id/btnFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="فیلتر کن"
+                android:textSize="17sp"
+                android:theme="@style/RedButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

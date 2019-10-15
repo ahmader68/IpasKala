@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemView"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="right|center_vertical|center_horizontal"
+    android:orientation="horizontal">
+
+    <com.intechdev.IpasKala.component.CheckBoxAppWork
+        android:id="@+id/chkItemDetiel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="che"
+        android:button="@null"
+        android:textAlignment="textStart"
+        android:paddingRight="10dp"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <!--<TextViewAppWork-->
+        <!--android:id="@+id/txtItemDetaileValue"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="right|center_vertical"-->
+        <!--android:layout_weight="20"-->
+        <!--android:text="TextView"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:textSize="12dp"/>-->
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_activity_height"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="horizontal">
+
+            <com.intechdev.IpasKala.component.TextViewAppWork
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|right"
+                android:text="ارتباط با پشتیبانی"
+                android:textColor="@color/White"
+                android:textSize="@dimen/title_activity_font_size" />
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:id="@+id/llAbout"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/imgDialogIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/nikpad2" />
+
+                <com.intechdev.IpasKala.component.JustifiedTextView
+                    android:id="@+id/txtBlogDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:text="@string/testlongText"
+                    app:textColor="#000000"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:textSize="16px" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

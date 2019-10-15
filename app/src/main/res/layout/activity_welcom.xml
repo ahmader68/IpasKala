@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100"
+            android:layout_weight="10.5"/>
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtTitleWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="23sp"
+
+            android:layout_alignParentRight="true"
+
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            />
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtWelcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:text=""
+                    android:textAlignment="gravity"
+                    android:textSize="17sp"
+                    layout:fontName="@string/font_iransansmobile"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"/>
+
+                <!--<JustifiedTextView-->
+                    <!--android:id="@+id/txtWelcome"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:textColor="#000000"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--app:textSize="16px" />-->
+            </LinearLayout>
+        </ScrollView>
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnWelcome"
+            android:theme="@style/RedButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="@string/ButtonWelcom" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

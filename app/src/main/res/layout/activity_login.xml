@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:id="@+id/lHeadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnTabLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sh_transparent_background"
+            android:drawableBottom="@drawable/sh_bottom_border_grey"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/TextViewRegister" />
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnTabRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sh_transparent_background"
+            android:drawableBottom="@drawable/sh_bottom_border_green"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/TextViewLogin" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/vfloginRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="نام کاربری"
+                        android:inputType="number"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="24sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="کلمه عبور"
+                        android:inputType="textPassword"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_lock"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="26sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <com.intechdev.IpasKala.component.ButtonAppWork
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/ButtonLogin"
+                android:theme="@style/RedButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2.4">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etNameR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="نام"
+                        android:inputType="textPersonName"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2.3">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etFamilyR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="نام خانوادگی"
+                        android:inputType="textPersonName"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="24sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etUserNameR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="نام کاربری"
+                        android:inputType="textPersonName"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="24sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etEmailR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="رایان نامه"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_email"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="19sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etMobileR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="تلفن همراه"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_mobile"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="26sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etPasswordR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="کلمه عبور"
+                        android:inputType="textPassword"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_lock"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="26sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4.7">
+
+                    <com.intechdev.IpasKala.component.EditTextAppWork
+                        android:id="@+id/etPassword2R"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="right"
+                        android:hint="تکرار کلمه عبور"
+                        android:inputType="textPassword"
+                        android:maxLength="70"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="@string/fa_lock"
+                    android:textColor="@color/iconColorDisable"
+                    android:textSize="26sp"
+                    app:fontName="@string/font_awesome" />
+            </LinearLayout>
+
+            <com.intechdev.IpasKala.component.ButtonAppWork
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/ButtonRegister"
+                android:theme="@style/RedButton" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

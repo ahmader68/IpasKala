@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="مهدی موسوی"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lMyProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="پروفایل من"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_cart_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lChangePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="تغییر رمز عبور"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_change_pass_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lMyAddresses"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="آدرس های من"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_address_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lHistoryOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="تاریخچه سفارشات"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_history_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lDownloads"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="دانلودها"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_download_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lFavorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="علاقه مندها"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_favorite_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="تراکنش ها"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_cost_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lDiscounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="تخفیف های من"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        custom:srcCompat="@drawable/ic_profile_offer_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="پیام ها"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+
+                        layout:srcCompat="@drawable/ic_profile_messeage_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="ارتباط با پشتیبانی"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        layout:srcCompat="@drawable/ic_profile_about_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:onClick="myClick"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.intechdev.IpasKala.component.TextViewAppWork
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4.5"
+                        android:gravity="right"
+                        android:text="خروج"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        layout:srcCompat="@drawable/ic_profile_exit_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/toolbarBottom"
+            layout="@layout/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

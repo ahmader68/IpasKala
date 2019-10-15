@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:layout_margin="10dp"
+    android:background="#fafafa">
+
+    <com.intechdev.IpasKala.component.TextViewAppWork
+        android:id="@+id/txtItemValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="right|center_vertical"
+        android:text="TextView"
+        android:paddingRight="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llHColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/sh_circle"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

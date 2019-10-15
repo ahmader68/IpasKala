@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:background="#fefefe"
+        android:id="@+id/lStockItems">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginRight="3dp"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtStockName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="عنوان کالا"
+
+                    android:layout_alignParentRight="true"
+
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+
+                    />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtStockDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="توضیحات"
+
+                    android:layout_alignParentRight="true"
+
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:background="@color/black_overlay"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginLeft="3dp"
+                android:weightSum="5">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="تومان"
+                    android:textColor="@color/Green"
+                    android:paddingRight="3dp"/>
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="@color/Green" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtPriceOffer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="@color/Red"
+                    android:paddingRight="1dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgStockSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical|center"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/capture" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

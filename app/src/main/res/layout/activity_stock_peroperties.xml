@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_activity_height"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="مشخصات"
+            android:textSize="@dimen/title_activity_font_size"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal">
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtStockNamePeroperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="عنوان کالای انتخاب شده"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+        <include
+            android:id="@+id/toolbarBottom"
+            layout="@layout/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+    </LinearLayout>
+</LinearLayout>

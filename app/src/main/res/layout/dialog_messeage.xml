@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dialog_back"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="right|center_vertical" >
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtTitleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="TextViewAppWork"
+            android:textColor="#8e8e8e" />
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_icon_piechart"
+            android:textColor="#8e8e8e"
+            android:textSize="22sp"
+            android:gravity="center_vertical|center_horizontal|center"
+            app:fontName="@string/font_awesome"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <com.intechdev.IpasKala.component.TextViewAppWork
+            android:id="@+id/txtDescriptionDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:text="TextViewAppWork"
+            android:textColor="#565656" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" >
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnCancelDialog"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/sh_button_welcome"
+            android:text="انصراف"
+            android:textColor="#FFFFFFFF" />
+
+        <com.intechdev.IpasKala.component.ButtonAppWork
+            android:id="@+id/btnConfirmDialog"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/sh_bottom_border_green"
+            android:text="تایید"
+            android:textColor="#FFFFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

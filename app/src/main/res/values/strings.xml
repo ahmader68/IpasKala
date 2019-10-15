@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">تیکامرس</string>
+    <string name="app_name_title">تیکامرس</string>
+    <string name="ButtonWelcom">ورود به فروشگاه</string>
+    <string name="TextViewWelcom">به تیکامرس خوش آمدید</string>
+    <string name="TextViewLogin">ورود</string>
+    <string name="TextViewRegister">ثبت نام</string>
+    <string name="ButtonRegister">ثبت نام</string>
+    <string name="ButtonLogin">ورود</string>
+    <string name="testlongText">تصور کنید شما در حال توسعه یک اپلیکیشن هستید که اکتیویتی ها و فرگمنت های مختلف و زیادی دارد که هر یکی از این component ها با یک یا چند اکتیویتی و فرگمنت ارتباط دارد برای مدیریت و سازماندهی بین این ارتباطات که ممکن است بسیار زیاد باشد کار دشواری را در پیش خواهید داشت با استفاده از کتاب خانه EventBus این ارتباطات بسیار ساده خواهند شد کتاب خانه EventBus یک پروژه open-source یا متن باز است و برپاییه ی publisher/subscriber برای ترکیب کردن استفاده می کند EventBus این امکان را فراهم می کند تا ارتباط میان دو اکتیویتی که در یکی از آنها کدهای زیاد و در دیگری کدهای نسبتا کم یا زیاد قرار دارد بدون اینکه تداخلی پیش آید ارتباط برقرار کند به طور مثال یک داده را از یک اکتیویتی به یک فرگمنت پاس دهید همچنین باعث می شود برنامه سریعتر شود.</string>
+    <string name="expand">￬ بیشتـر</string>
+    <string name="collapse">￪ بستن</string>
+    <string name="deleteshopingbag">حذف از سبد خرید</string>
+    <string name="callMe_yes">به من اطلاع بده</string>
+    <string name="callMe_no">به من اطلاع نده</string>
+
+    <string name="timerVal">00:00:00</string>
+
+    <string name="font_awesome">fontawesome</string>
+    <string name="font_iransansmobile">iransansmobile</string>
+
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+    <string name="fa_sort_down">&#xf0dd;</string>
+    <string name="fa_sort_up">&#xf0de;</string>
+    <string name="fa_check">&#xf00c;</string>
+    <string name="fa_times">&#xf00d;</string>
+    <string name="fa_certificate">&#xf0a3;</string>
+    <string name="fa_lock">&#xF023;</string>
+    <string name="fa_sheare">&#xF1E0;</string>
+    <string name="fa_email">&#xF003;</string>
+    <string name="fa_mobile">&#xF10B;</string>
+    <string name="fa_user">&#xF2C0;</string>
+    <string name="fa_grid_item">&#xf009;</string>
+    <string name="fa_list_item">&#xf00b;</string>
+
+    <string name="offer">تخفیف(-)</string>
+    <string name="lastPrice">قیمت نهایی</string>
+    <string name="counter">تعداد</string>
+    <string name="warranty">گارانتی</string>
+    <string name="color">رنگ</string>
+    <string name="confirmChangePass">تغییر رمز عبور</string>
+    <string name="btnConfirmMyProfile">ثبت تغییرات</string>
+    <string name="btnAddAdress">افزودن آدرس</string>
+    <string name="ConfirmAddress">تایید</string>
+    <string name="porbazdid">پربازدیدترین</string>
+    <string name="porforush">پرفروشترین</string>
+    <string name="pishnahadvizhe">پیشنهاد ویژه</string>
+    <string name="gheymatziyadbekam">قیمت از زیاد به کم</string>
+    <string name="gheymatkambezyad">قیمت از کم به زیاد</string>
+    <string name="jadidtarinha">جدیدترین</string>
+
+</resources>

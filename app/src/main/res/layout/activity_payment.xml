@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#ffffff"
+                        android:elevation="4dp"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.intechdev.IpasKala.component.TextViewAppWork
+                            android:id="@+id/txtBuyingGoods"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="left"
+                            android:text="8900000 تومان" />
+
+                        <com.intechdev.IpasKala.component.TextViewAppWork
+                            android:id="@+id/textView44"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="جمع کل خرید شما:"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="12000 گرم" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="جمع وزن:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="انتخاب شیوه ارسال:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spSendMthod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="توضیحات برای مدیریت سایت:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <com.intechdev.IpasKala.component.EditTextAppWork
+                    android:id="@+id/txtDescManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:minLines="1"
+                    android:maxLines="6"
+                    android:textSize="@dimen/font_size_2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/txtSumPriceFactor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="70000 تومان" />
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView45"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="مبلغ قابل پرداخت:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.intechdev.IpasKala.component.TextViewAppWork
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="نوع پرداخت:"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Spinner
+                    android:id="@+id/spPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"/>
+
+            </LinearLayout>
+
+            <com.intechdev.IpasKala.component.ButtonAppWork
+                android:id="@+id/btnPayment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:theme="@style/GreenButton"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="تایید سفارش  "
+                android:focusableInTouchMode="true"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/toolbarBottom"
+            layout="@layout/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</LinearLayout>

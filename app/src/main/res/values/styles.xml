@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/Green</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@color/White</item>
+        <item name="fontFamily">byekan</item>
+    </style>
+
+    <style name="GreenButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/Green</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@color/White</item>
+        <item name="fontFamily">byekan</item>
+    </style>
+
+    <style name="WhiteButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/White</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@color/White</item>
+        <item name="fontFamily">byekan</item>
+    </style>
+
+    <style name="ReadTextButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/White</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@color/White</item>
+        <item name="fontFamily">byekan</item>
+    </style>
+
+    <style name="ToolbarButtonBottom" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textAppearance">@color/Green</item>
+        <item name="fontFamily">byekan</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">#eaac00</item>
+        <item name="colorControlNormal">#f5f925</item>
+        <item name="android:layout_height">7dp</item>
+        <item name="android:layout_width">7dp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/pink</item>
+        <item name="colorControlActivated">@color/indigo</item>
+        <item name="android:minHeight">7dp</item>
+        <item name="android:maxHeight">7dp</item>
+    </style>
+
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/sh_button_color_selector</item>
+        <item name="buttonTint">@drawable/sh_button_color_selector</item>
+    </style>
+
+</resources>
